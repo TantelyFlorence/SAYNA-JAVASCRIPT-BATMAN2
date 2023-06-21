@@ -1,0 +1,431 @@
+*{
+    /* margin: 0 0 ; */
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* stylel de police  */
+@font-face {
+    font-family: "titre h1";
+    src: url(/fonts/Rajdhani-Medium.ttf);
+}
+@font-face{
+    font-family: "titre h2";
+    src: url(/fonts/SpaceGrotesk-Bold.ttf);
+}
+@font-face{
+    font-family: "texte";
+    src: url(/fonts/SpaceGrotesk-Regular.ttf);
+}
+h1, li, a{
+    font: 36px "titre h1"
+}
+p{
+    font: 22px "texte";
+}
+h2{
+    font: 12px "titre h2";
+}
+h3{
+    font: 14px "texte"; 
+}
+label{
+    font: 12px "titre";
+}
+
+/* animation */
+body:not(.social-icons) {
+    animation: body 3s ease-out;
+}
+
+@keyframes body {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 3;
+      transform: translateX(0%);
+    }
+}
+
+body{
+    background-color: black;
+    background-image: url("./Illustrations/Bathome1.png");
+    background-size: cover;
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+    height: 901px;
+    font-size: 12px; 
+    overflow-x: hidden; 
+    animation: body 1s ease-out forwards;
+}
+
+/* menu */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    width: 90%;
+    margin:0 auto;
+    padding: 6% 5%;
+}
+.menu-right {
+    display: flex;
+}
+.menu a{
+    margin-left: 15px;
+    text-decoration: none;
+}
+.menu-right a:hover{
+    text-decoration: underline;
+}
+.introduction{
+    height: 130vh;
+    width: 90%;
+    margin: 0px auto;
+    padding: 25px;
+    text-align: center;
+    justify-content: center;
+}
+  
+.sous-intro{
+    text-align: center;
+    width: 50%;
+    height: 50vh;
+    margin: 15% auto;
+}
+
+.header-btn {
+    height: 40%;
+}
+.header-btn button, .confirmation button{
+    background: linear-gradient(to right, #b0afad6d, #8900099c);
+    font: 16px "texte";
+    width: 200px;
+}
+
+button {
+    height: 32%;
+    border: none;
+    padding: 5px 10px;
+    margin: 1%;
+    display: inline-block;
+    justify-content: space-between;
+    opacity: 40%;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.header-btn button, .confirmation button:hover{
+    opacity: 100%;
+}
+.iv{
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    flex-wrap: wrap;
+    top:255px;
+    right:20px;
+    margin-top: 20px;
+    position: fixed;
+}
+.flèche{
+    align-items: center;
+    margin-left: 45%;
+    margin-top: -13%;
+}
+.btn{
+    font-size: 20px;
+    font: 20px "titre h1";
+    margin: 2%;
+    padding: 20px 30px;
+    opacity: 40%;
+    position: relative;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+    border-image: linear-gradient( to right, #EDDEBF, #176491)1;
+    background: none;
+}
+.btn:hover{
+    opacity: 100%;
+}
+
+.description{
+    margin: 0 12%;
+    text-align: justify;
+}
+.cartes{
+    display: flex;
+    justify-content: center;
+}
+.cartes img{
+    width: 98%;
+    transition: .5s all ease-in-out;
+    padding: 5%;
+}
+.cartes img:hover{
+    transform: scale(1.1);
+}
+.ennemis{
+    position: relative;
+    margin-top: 7%;
+}
+.deco1 img{
+    position: absolute;
+    width: 12%;
+    left: 20%;
+    top: -8%;  
+}
+ .deco2 img{
+    position: absolute;
+    width: 30%;
+    left: 72%;
+    top: 84%;
+}
+.allies{
+    margin-top: 7%;
+}
+/* .justice{
+    margin: 0;
+    justify-content: center;
+} */
+.superheros{
+    width: 100%;
+    height: 600px;
+    background-image: url("./Illustrations/Bathome11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 20%;
+    margin-top: 7%;
+}
+.multimedia{
+    width: 78%;
+    margin: auto;
+}
+
+.multi1{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+.synopsis{
+    display: flex;
+    background: linear-gradient(to bottom right, #4a4a40, #081d2a);
+    border-radius: 0 15px 15px 0;
+    margin: auto 15%;
+    padding-left: 9%;
+
+}
+.text2{
+    padding-left: 5%;
+    margin: 0 2% 0 11%;
+}
+.video{
+    justify-content: center;
+    text-align: center;
+}
+.img2{
+    margin-left: -20%;
+}
+.img2 img{
+    height: 100%;
+    width: 100%;
+}
+
+/* bande anonce */
+.video a img {
+    width: 70%;
+    /* margin: auto */
+}
+.video img:hover{
+    filter: drop-shadow(0 2px 1.5rem #fff);
+}
+
+/* formulaire */
+/* .formulaire {
+    width: 100%;
+    background: linear-gradient(160deg, #4b4a4afd 10%, #0f202bf5 60%);
+    position: absolute;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    margin-top: 15%;
+} */
+
+/* #formulaire-contact {
+    margin-top: 50px;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(160deg, #4b4a4afd 10%, #0f202bf5 60%);
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    margin-top: 15%;
+}
+
+#formulaire-contact h3{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 70px;
+}
+
+#formulaire-contact h4{
+    font-size: 20px;
+    font-weight: 1;
+}
+
+
+#formulaire-contact input[type="text"], #formulaire-contact input[type="email"] {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    opacity: 90%;
+} */
+
+form{
+    background: linear-gradient(to bottom right, #4d493f, #081e2a);
+   
+}
+.formulaire{
+    margin: 30%;
+}
+.prenom{
+    text-align: center;
+}
+
+input, select, textarea{
+    background: none;
+    padding: 5px 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+.confirmation{
+    text-align: center;
+    font: 20px "titre h1";
+}
+.bouton-final{
+    padding: 15px 65px;
+}
+.bouton3 button .bouton2{
+    /* padding: 5px 15px; */
+    background: none;
+    border: linear-gradient( to right, #EDDEBF, #176491) 1;
+    text-align: center;
+    padding: 10px 8px;
+    margin: 10px;
+}
+.confirmation button{
+    text-align: center;
+}
+/* [value]{
+    background: gray;
+} */
+
+.checkbox-form {
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+}
+
+.checkbox-form label{
+    opacity: 50%;
+}
+
+#formulaire-contact select{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    opacity: 50%;
+}
+
+/* Custom select */
+#frequence {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("Logos/Fleche2_avec_rotation.png");
+    background-repeat: no-repeat; 
+    background-size: 16px;
+    background-position: right center; 
+    padding-right: 20px; 
+    padding-bottom: 5px;
+    cursor: pointer; 
+} 
+
+#frequence option {
+    background: linear-gradient(160deg, #4b4a4afd 10%, #0f202bf5 60%);
+}
+
+select option { 
+    background-color: transparent;
+    color: black;
+}
+#formulaire-contact {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #fdfdfd7e 10%, #146696c2 60%);
+    border-image-slice: 1;
+    margin-top: 10px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.confirm-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.replique{
+    margin-top: 100%;
+}
+.citation{
+    text-align: center;
+}
+
+.rond{
+    display: flex;
+    justify-content: center;
+}
+.cercle{
+    margin: 0 2px;
+    width: 8px;
+    height: 7px;
+    border-radius: 50px;
+    border: 2px solid rgb(103, 103, 207);
+    align-items: center;
+}
+.droite{
+    margin-left: 80%;
+}
+.gauche{
+    margin-top: 4%;
+}
+.copyright img{
+    width: 34px;
+    height: 34px;
+}
+
+.projets, .medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+}
