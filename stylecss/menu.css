@@ -30,8 +30,8 @@ h2{
 h3{
     font: 14px "texte"; 
 }
-label{
-    font: 12px "titre";
+.projets p{
+    font: 10px "titre";
 }
 
 /* animation */
@@ -49,19 +49,22 @@ body:not(.social-icons) {
       transform: translateX(0%);
     }
 }
-
 body{
     background-color: black;
-    background-image: url("./Illustrations/Bathome1.png");
+    background-image: url("../Illustrations/Bathome1.png");
     background-size: cover;
     background-position: 80% 20%;
     background-repeat: no-repeat;
     height: 901px;
-    font-size: 12px; 
     overflow-x: hidden; 
     animation: body 1s ease-out forwards;
 }
+main{
+    border-left: 3px solid #BCBBBD;
+    border-right: 3px solid #BCBBBD;
+    margin: 0px 5%;
 
+}
 /* menu */
 .menu{
     display: flex;
@@ -71,6 +74,10 @@ body{
     width: 90%;
     margin:0 auto;
     padding: 6% 5%;
+    border-bottom: 3px #BCBBBD solid;
+    border-left:3px #BCBBBD solid;
+    border-right:3px #BCBBBD solid;
+
 }
 .menu-right {
     display: flex;
@@ -81,6 +88,7 @@ body{
 }
 .menu-right a:hover{
     text-decoration: underline;
+    color: yellow;
 }
 .introduction{
     height: 130vh;
@@ -90,7 +98,6 @@ body{
     text-align: center;
     justify-content: center;
 }
-  
 .sous-intro{
     text-align: center;
     width: 50%;
@@ -102,7 +109,7 @@ body{
     height: 40%;
 }
 .header-btn button, .confirmation button{
-    background: linear-gradient(to right, #b0afad6d, #8900099c);
+    background: linear-gradient(to right, #c3c1bd84, #8900099c);
     font: 16px "texte";
     width: 200px;
 }
@@ -118,16 +125,17 @@ button {
     transition: all .5s ease-in-out;
     cursor: pointer;
 }
-.header-btn button, .confirmation button:hover{
+.header-btn button:hover{
     opacity: 100%;
 }
+
 .iv{
     position: absolute;
     text-align: center;
     width: 100px;
     flex-wrap: wrap;
     top:255px;
-    right:20px;
+    right:27px;
     margin-top: 20px;
     position: fixed;
 }
@@ -192,13 +200,14 @@ button {
     justify-content: center;
 } */
 .superheros{
-    width: 100%;
+    width: 120%;
     height: 600px;
-    background-image: url("./Illustrations/Bathome11.png");
+    background-image: url("../Illustrations/Bathome111.PNG");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 80% 20%;
     margin-top: 7%;
+    margin-left: -10%;
+    margin-right: -10%;
 }
 .multimedia{
     width: 78%;
@@ -214,9 +223,15 @@ button {
     display: flex;
     background: linear-gradient(to bottom right, #4a4a40, #081d2a);
     border-radius: 0 15px 15px 0;
-    margin: auto 15%;
+    margin: auto 11%;
     padding-left: 9%;
+}
+.img2{
+    margin-left: -20%;
 
+}
+.img2 img{
+    height: 100%;
 }
 .text2{
     padding-left: 5%;
@@ -225,73 +240,26 @@ button {
 .video{
     justify-content: center;
     text-align: center;
-}
-.img2{
-    margin-left: -20%;
-}
-.img2 img{
-    height: 100%;
-    width: 100%;
+    margin-top: 5%;
 }
 
 /* bande anonce */
 .video a img {
     width: 70%;
-    /* margin: auto */
 }
 .video img:hover{
     filter: drop-shadow(0 2px 1.5rem #fff);
 }
 
 /* formulaire */
-/* .formulaire {
-    width: 100%;
-    background: linear-gradient(160deg, #4b4a4afd 10%, #0f202bf5 60%);
-    position: absolute;
-    height: 100%;
-    border: 1px solid rgba(128, 128, 128, 0.664);
-    margin-top: 15%;
-} */
-
-/* #formulaire-contact {
-    margin-top: 50px;
-    justify-content: center;
-    width: 100%;
-    background: linear-gradient(160deg, #4b4a4afd 10%, #0f202bf5 60%);
-    height: 100%;
-    border: 1px solid rgba(128, 128, 128, 0.664);
-    margin-top: 15%;
-}
-
-#formulaire-contact h3{
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 1px;
-    margin-bottom: 70px;
-}
-
-#formulaire-contact h4{
-    font-size: 20px;
-    font-weight: 1;
-}
-
-
-#formulaire-contact input[type="text"], #formulaire-contact input[type="email"] {
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid white;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    opacity: 90%;
-} */
 
 form{
     background: linear-gradient(to bottom right, #4d493f, #081e2a);
-   
+    margin-left: -10%;
+    margin-right: -10%;
 }
 .formulaire{
-    margin: 30%;
+    margin: 5% 30%;
 }
 .prenom{
     text-align: center;
@@ -314,19 +282,20 @@ label{
     text-align: center;
     font: 20px "titre h1";
 }
+
+.confirmation button:hover{
+    opacity: 100%;
+}
 .bouton-final{
     padding: 15px 65px;
 }
-.bouton3 button .bouton2{
-    /* padding: 5px 15px; */
+.bouton3 button{
     background: none;
-    border: linear-gradient( to right, #EDDEBF, #176491) 1;
-    text-align: center;
     padding: 10px 8px;
-    margin: 10px;
-}
-.confirmation button{
-    text-align: center;
+    margin: 10px auto;
+    border-image: linear-gradient( to right, #EDDEBF, #176491) 1;
+    border: 3px solid  #176491;
+    margin-left: 15%;
 }
 /* [value]{
     background: gray;
@@ -338,16 +307,6 @@ label{
 }
 
 .checkbox-form label{
-    opacity: 50%;
-}
-
-#formulaire-contact select{
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid white;
-    background-color: transparent;
     opacity: 50%;
 }
 
@@ -373,28 +332,9 @@ select option {
     background-color: transparent;
     color: black;
 }
-#formulaire-contact {
-    width: 100px;
-    height: 40px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right, #fdfdfd7e 10%, #146696c2 60%);
-    border-image-slice: 1;
-    margin-top: 10px;
-    vertical-align: middle;
-    margin-bottom: 20px;
-}
-
-.confirm-btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-}
 
 .replique{
-    margin-top: 100%;
+    margin-top: 10%;
 }
 .citation{
     text-align: center;
@@ -417,6 +357,8 @@ select option {
 }
 .gauche{
     margin-top: 4%;
+    margin-left: 4%;
+    width: 90%;
 }
 .copyright img{
     width: 34px;
@@ -428,4 +370,5 @@ select option {
     justify-content: center;
     align-items: center;
     column-gap: 1%;
+    margin-bottom: 4%;
 }

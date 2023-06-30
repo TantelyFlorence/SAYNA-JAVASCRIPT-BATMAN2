@@ -4,170 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SAYNA GAME / BATMAN 2</title>
     <meta name="keywords" content="BATMAN, GAME, JAVASCRIPT">
     <meta name="author" content="ISAIELFISTHER">
-    <link rel="stylesheet" type="text/css" href="./stylecss/game.css">
+    <link rel="stylesheet" href="./stylecss/game.css">
 </head>
 <body>
-
-    <!-- EN TETE -->
-    <header id="header-page">
-        <h1></h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="#"  class="active">GAME</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Réseaux sociaux -->
-    <aside class="Réseaux">
-        <ul>
-            <li class="cursor-pointer" id="batman-up-button">
-                <img class="batman-hover" src="Assets/Image/Logos/logo_bat_flèche.png" alt="">
-            </li>
-        
-            <li>
-                <a href="">
-                    <img class="social-network batman-hover" src="Assets/Image/Logos/icon_facebook.png" alt=" facebook ">
-                </a>
-            </li>
-        
-            <li>
-                <a href="">
-                    <img class="social-network batman-hover" src="Assets/Image/Logos/icon_ig.png" alt=" instagram ">
-                </a>
-            </li>
-        
-            <li>
-                <a href="">
-                    <img class="social-network batman-hover" src="Assets/Image/Logos/icon_tw.png" alt=" twitter ">
-                </a>
-            </li>
-        
-           <li class="mt-10 cursor-pointer" id="batman-down-button">
-                <img class="hover-jaune-bataman" src="Assets/Image/Logos/logo_bat_flèche_2.png" alt="Logo aller en bas du page">
-            </li>
-        </ul>
-    </aside>
-
- <!-- Contenu de la page -->
- <main>
-    <!-- section 1 -->
-    <section class="intro">
-        <div class="part-title fade-in-start">
-            <h1>LET’S PLAY A <br> LITTLE GAME...</h1>
-        </div>
-        <div class="margin-200">
-            <img src="./Assets/Image/Logos/flèche_down_header.png" alt='Flèche'>
-        </div>
-    </section>
-    <section class="game" id="start">
-        <div class="content-game">
-            <h2 class="fade-in">connaissez vous bien le chevalier noir ?</h2>
-            <div>
-                <img class="fade-zoom" src="./Assets/Image/Game/Batgame_2.png">
-                
+    <header>
+        <div class="menu"> 
+            <div class="menu-left">
+                <img src="Logos/logohome.png" alt="">
             </div>
-            <button onclick="startGame()">DÉMARRER LE QUIZ</button>
-        </div>
-    </section>
-
-    <!-- section game -->
-    <section class="game" id="game">
-        <div class="content-game">
-            <h2><span id="progression"></span>/15</h2>
-            <div class="questions">
-                <p class="question fade-in-start" id="question">
-                    
-                </p>
-                <div class="responses">
-                    <div class="image" id="image">
-                    </div>
-                    <div class="choix">
-                        <form id="form-res">
-                            <ul id="choices">
-                            
-                            </ul>
-                        </form>
-                    </div>
-                    <div id="illustrations">
-                        <img src="./Assets/Image/Game/Batgame_3.png" alt="">
-                    </div>
+            <div class="menu-right">
+                <div class="menu1">
+                    <a href="menu.html">HOME</a>
+                </div>
+                <div class="menu2">
+                    <a href="game.html">GAME</a>
                 </div>
             </div>
-            <button onclick="next()">QUESTION SUIVANT</button>
         </div>
-    </section>
-</main>
+        <div class="iv">
+            <div class="fleche1" ><a href="#haut"> <img src="Logos/logo_bat_flèche.png" alt=""></a></div>
+            <div ><a href=""> <img src="Logos/icon_facebook.png" alt=""> </a></div>
+            <div ><a href=""> <img src="Logos/icon_ig.png" alt=""></a></div>
+            <div ><a href=""> <img src="Logos/icon_tw.png" alt=""></a></div>
+            <div><a href="#bas"> <img src="Logos/logo_bat_flèche_2.png" alt=""></a></div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <div class= "play">
+                <h1>LET’S PLAY A <br> LITTLE GAME...</h1>
+            </div>
+            <div>
+                <img src="./Logos/flèche_down_header.png" alt='Flèche'>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>connaissez vous bien le chevalier noir ?</h2>
+                <div>
+                    <img  src="./Illustrations/Batgame_2.png">
+                    
+                </div>
+                <button onclick="startGame()">DÉMARRER LE QUIZ</button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2><span></span>/15</h2>
+                <div class="questions">
+                    <p class="question fade-in-start" id="question">
+                        
+                    </p>
+                    <div class="responses">
+                        <div class="image" id="image">
+                        </div>
+                        <div class="choix">
+                            <form id="form-res">
+                                <ul id="choices">
+                                
+                                </ul>
+                            </form>
+                        </div>
+                        <div id="illustrations">
+                            <img src="./Assets/Image/Game/Batgame_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button onclick="next()">QUESTION SUIVANT</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="projets">
+            <img src="Logos/icon_WB.png" alt="warner bros">
+            <p> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
+                Snyder & Reeves</p>
+        </div>
+        
+        <div class="medias">
+                <div>
+                    <img src="Logos/logo_sayna_white.png" alt="">
+                    </div>
+                <div>
+                    <img src="Logos/icon_x.png" alt="">
+                </div>
+                <div>
+                    <img src="Logos/icon_DC.png" alt="">
+                </div>
+                <div>
+                    <img src="Logos/icon_facebook.png" alt="">
+                </div>   
+                <div>
+                    <img src="Logos/icon_ig.png" alt="">
+                </div>
+                <div>
+                    <img src="Logos/icon_tw.png" alt="">
+                </div>
+            </div>
+        </div>			
+    </footer>
 
- <!-- FOOTER -->
- <footer id="page-bottom">
-    <div class="text">
-        <img src="Assets/Image/Logos/icon_WB.png">
-        Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
-    </div>
-    <div class="logos">
-        <ul class="-ml-5">
-            <li>
-                <a href="">
-                    <img class="hover-jaune-bataman" src="Assets/Image/Logos/logo_sayna_white.png">
-                </a>
-            </li>
-        
-            <li>
-                <a href="">
-                    <img class="hover-jaune-bataman" class="-ml-5" src="Assets/Image/Logos/icon_x.png">
-                </a>
-            </li>
-        
-            <li>
-                <a href="">
-                    <img  class="hover-jaune-bataman"class="-ml-5" src="Assets/Image/Logos/icon_DC.png">
-                </a>
-            </li>
-        
-            <li>
-                <a href="">
-                    <img class="hover-jaune-bataman" src="Assets/Image/Logos/icon_facebook.png">
-                </a>
-            </li>
-        
-            <li>
-                <a href="">
-                    <img class="hover-jaune-bataman" src="Assets/Image/Logos/icon_ig.png">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img class="hover-jaune-bataman" src="Assets/Image/Logos/icon_tw.png">
-                </a>
-            </li>
-        </ul>
-    </div>
-</footer>
-<!-- POPUPBOX ERROR -->
-<div class="popup-error">
-<div class="popup-content">
-    <h2 id="popup-title"></h2>
-    <p id="popup-message">
-        
-    </p>
-    <button id="restart-quiz">RECOMMENCER LE QUIZ</button>
-</div>
-</div>
-<div id="canvas-container">
-<canvas id="canvas" width="1300" height="700"></canvas>
-</div>
-
-<script src="Assets/JS/script.js"></script>
-<script src="Assets/JS/game-script.js"></script> 
+        <script src="Assets/JS/script.js"></script>
+        <script src="Assets/JS/game-script.js"></script> 
 </body>
 </html>
 

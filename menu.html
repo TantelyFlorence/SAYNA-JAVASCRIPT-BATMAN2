@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
-		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="stylecss/menu.css">
 	</head>
 	<body>
 		<header>
@@ -18,36 +18,38 @@
 						<a href="menu.html">HOME</a>
 					</div>
 					<div class="menu2">
-						<a href="">GAME</a>
+						<a href="game.html">GAME</a>
 					</div>
                 </div>
             </div>
-            <div class="introduction" id="haut">
-				<div class="sous-intro">
-					<div class="bruce">
-						<p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les
-							criminels de Gotham City. Il est vengeur. Il est la nuit.
-						</p>
-						<h1>Il est Batman.</h1>
-					</div>    
-					<div class="header-btn">
-						<a href="" ><button>VOIR LE HEROS</button></a>
-						<a href="" ><button>LES ADVERSAIRES</button></a>
-					</div>
-				</div>
-			</div >
-				<div class="iv">
-					<div ><a href="#haut"> <img src="Logos/logo_bat_flèche.png" alt=""></a></div>
-					<div ><a href=""> <img src="Logos/icon_facebook.png" alt=""> </a></div>
-					<div ><a href=""> <img src="Logos/icon_ig.png" alt=""></a></div>
-					<div ><a href=""> <img src="Logos/icon_tw.png" alt=""></a></div>
-					<div><a href="#bas"> <img src="Logos/logo_bat_flèche_2.png" alt=""></a></div>
-				</div>
-            <div class="flèche">
-                <img src="Logos/flèche_down_header.png" alt="">
-            </div>
+            <div class="iv">
+				<div class="fleche1" ><a href="#haut"> <img src="Logos/logo_bat_flèche.png" alt=""></a></div>
+				<div ><a href=""> <img src="Logos/icon_facebook.png" alt=""> </a></div>
+				<div ><a href=""> <img src="Logos/icon_ig.png" alt=""></a></div>
+				<div ><a href=""> <img src="Logos/icon_tw.png" alt=""></a></div>
+				<div><a href="#bas"> <img src="Logos/logo_bat_flèche_2.png" alt=""></a></div>
+			</div>
 		</header>
 			<main>
+				<section>
+					<div class="introduction" id="haut">
+						<div class="sous-intro">
+							<div class="bruce">
+								<p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les
+									criminels de Gotham City. Il est vengeur. Il est la nuit.
+								</p>
+								<h1>Il est Batman.</h1>
+							</div>    
+							<div class="header-btn">
+								<a href="" ><button>VOIR LE HEROS</button></a>
+								<a href="" ><button>LES ADVERSAIRES</button></a>
+							</div>
+						</div>
+					</div >
+					<div class="flèche">
+						<img src="Logos/flèche_down_header.png" alt="">
+					</div>
+				</section>
 				<section>
 					<div>
 						<div class="description">
@@ -182,10 +184,10 @@
 							<div class="prenom"><h1>PRENONS CONTACT</h1></div>
 							<div class="reste">
 								<h1> ADRESSE EMAIL </h1>
-								<div><input type= " adresse email" placeholder="Adresse email"></div>
+								<div><input type= "text" name="email" placeholder="Adresse email"></div>
 								<h1> NEWSLETTER</h1>
 								<div style="display: flex; justify-content: space-between;"><label>En cochant cette case vous acceptez de recevoir l'actualité concernant  les aventures de Batman:</label>
-								<input type="checkbox" style="max-width: 20px;"> </div> <br>
+								<input type="checkbox" name="accept" style="max-width: 20px;"> </div> <br>
 								<select name="frequence" id="date">
 									<option value=""> Choississez la fréquence</option>
 									<option value="">Une fois par semaine </option>
@@ -194,18 +196,18 @@
 									<option value="">Une fois tous les trois mois</option>
 									<option value="">Une fois tous les six mois</option>
 								</select> <br>
-								<input type="news" placeholder="Souhaitez vous recevoir des news">
+								<input type="text" name="confirmation" placeholder="Souhaitez vous recevoir des news">
 								<div class="bouton3">
-							 		<button class="bouton2">Des films</button>
-							 		<button class="bouton2">Des comics</button>
-							 		<button class="bouton2">De tout</button>
+							 		<button class="btn2">Des films</button>
+							 		<button class="btn2">Des comics</button>
+							 		<button class="btn2">De tout</button>
 								</div>
 								<h1>MESSAGE</h1>
-								<input type="message" placeholder="Laissez un commentaire pour la communauté"><br>
+								<input type="text" name="message" placeholder="Laissez un commentaire pour la communauté"><br>
 								<div class="confirmation">
 
-									<button class="btn">CONFIRMER</button>
-						</div>   
+									<button type="submit" class="btn">CONFIRMER</button>
+								</div>   
 							</div>
 					</form>
 				</section>	
@@ -241,8 +243,8 @@
 			<footer>
 				<div class="projets">
 					<img src="Logos/icon_WB.png" alt="warner bros">
-					<label> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
-						Snyder & Reeves</label>
+					<p> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
+						Snyder & Reeves</p>
 				</div>
 				
 				<div class="medias">
