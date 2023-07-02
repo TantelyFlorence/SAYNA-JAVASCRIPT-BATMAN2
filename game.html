@@ -25,11 +25,11 @@
             </div>
         </div>
         <div class="iv">
-            <div class="fleche1" ><a href="#haut"> <img src="Logos/logo_bat_flèche.png" alt=""></a></div>
+            <div class="fleche1" ><a href="#haut"> <img src="Logos\logo_bat_flèche.png" alt=""></a></div>
             <div ><a href=""> <img src="Logos/icon_facebook.png" alt=""> </a></div>
             <div ><a href=""> <img src="Logos/icon_ig.png" alt=""></a></div>
             <div ><a href=""> <img src="Logos/icon_tw.png" alt=""></a></div>
-            <div><a href="#bas"> <img src="Logos/logo_bat_flèche_2.png" alt=""></a></div>
+            <div><a href="#bas"> <img src="Logos/logo_bat_flèche_2.png" alt=""></a></div>
         </div>
     </header>
     
@@ -38,43 +38,35 @@
             <div class= "play">
                 <h1>LET’S PLAY A <br> LITTLE GAME...</h1>
             </div>
-            <div>
-                <img src="./Logos/flèche_down_header.png" alt='Flèche'>
+            <div class="flèche">
+                <img src="Logos\flèche_down_header.png" alt='Flèche'>
             </div>
         </section>
         <section>
-            <div>
-                <h2>connaissez vous bien le chevalier noir ?</h2>
+            <div class="chevalier">
+                <h2>CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR</h2>
                 <div>
-                    <img  src="./Illustrations/Batgame_2.png">
+                    <img  src="Image\Game\Batgame_2.png">
                     
                 </div>
-                <button onclick="startGame()">DÉMARRER LE QUIZ</button>
+                <button class="demarrage" onclick="startGame()">DÉMARRER LE QUIZ</button>
             </div>
         </section>
         <section>
-            <div>
-                <h2><span></span>/15</h2>
-                <div class="questions">
-                    <p class="question fade-in-start" id="question">
-                        
-                    </p>
-                    <div class="responses">
-                        <div class="image" id="image">
-                        </div>
-                        <div class="choix">
-                            <form id="form-res">
-                                <ul id="choices">
-                                
-                                </ul>
-                            </form>
-                        </div>
-                        <div id="illustrations">
-                            <img src="./Assets/Image/Game/Batgame_3.png" alt="">
-                        </div>
-                    </div>
+            <div class="quizzz">
+                <div class="compteur">
+                    <h1> <span>/15</span> </h1>
                 </div>
-                <button onclick="next()">QUESTION SUIVANT</button>
+                <div class="quiz">
+                    <h3 id="question">Quel est lautre nom de lHomme-Mystère?</h3>
+                    <div id="answer-buttons">
+                        <button class="btn">Le Sphinx</button>
+                        <button class="btn">Saphir</button>
+                        <button class="btn">Le Joker</button>
+                    </div>
+                    <button id="next-btn">Question suivante</button>
+                </div>
+                <!-- <button class="suite" onclick="next()">QUESTION SUIVANT</button> -->
             </div>
         </section>
     </main>
@@ -107,9 +99,7 @@
             </div>
         </div>			
     </footer>
-
-        <script src="Assets/JS/script.js"></script>
-        <script src="Assets/JS/game-script.js"></script> 
+<script src="javascript/game.js"></script>
 </body>
 </html>
 

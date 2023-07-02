@@ -1,5 +1,63 @@
 *{
+    /* margin: 0 0 ; */
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
     text-decoration: none;
+}
+/* stylel de police  */
+@font-face {
+    font-family: "titre h1";
+    src: url(/fonts/Rajdhani-Medium.ttf);
+}
+@font-face{
+    font-family: "titre h2";
+    src: url(/fonts/SpaceGrotesk-Bold.ttf);
+}
+@font-face{
+    font-family: "texte";
+    src: url(/fonts/SpaceGrotesk-Regular.ttf);
+}
+h1, li, a{
+    font: 36px "titre h1"
+}
+p{
+    font: 22px "texte";
+}
+h2{
+    font: 22px "titre h2";
+}
+h3{
+    font: 14px "texte"; 
+}
+.projets p{
+    font: 10px "titre";
+}
+
+/* animation */
+body:not(.social-icons) {
+    animation: body 3s ease-out;
+}
+
+@keyframes body {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 3;
+      transform: translateX(0%);
+    }
+}
+body{
+    background-color: black;
+    background-image: url("../Image/Illustrations/Batgame_1.png");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    height: 901px;
+    overflow-x: hidden; 
+    animation: body 1s ease-out forwards;
 }
 main{
     border-left: 3px solid #BCBBBD;
@@ -32,9 +90,89 @@ main{
     text-decoration: underline;
     color: yellow;
 }
-body{
-    background-color: black;
-    background-image: url("../Illustrations/Batgame_1.png");
-    background-repeat: no-repeat;
-    background-size: 100vw 60vw;
+.iv{
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    flex-wrap: wrap;
+    top:255px;
+    right:27px;
+    margin-top: 20px;
+    position: fixed;
+}
+.play{
+    height: 400px;
+    padding-top: 30%;
+    margin-left: 10%;
+}
+.flèche{
+    align-items: center;
+    margin:  20% 0 10% 45%;
+}
+.chevalier {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 5% auto;
+    margin-left: 10%;
+    
+}
+.quizzz{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    font-size: 16px;
+
+}
+.demarrage{
+    background: linear-gradient(to right, #484037bc, #eb9a10e5);
+    font: 16px "texte";
+    width: 250px;
+    height: 50px;
+    border: none;
+    margin-top: 10%;
+}
+#next-btn{
+    background: linear-gradient(to right, #484037bc, #eb9a10e5);
+    font: 16px "texte";
+    width: 250px;
+    height: 50px;
+    border: none;
+    cursor: pointer; 
+    display: none;
+    color: #BCBBBD;
+}
+.btn{
+    width: 50%;
+    margin: 1%;
+    background: #3e3e3f;
+    border: none;
+    height: 35px;
+    text-align: left;
+    padding-left: 3%;
+    cursor: pointer;
+    transition: all 0.3s ;
+}
+.btn:hover:not([disabled]){
+    background: rgba(222, 213, 213, 0.698);
+    color: black;
+}
+.btn:disabled{
+    cursor: no-drop ;
+}
+
+/* footer */
+.projets, .medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+    margin-bottom: 4%;
+}
+/* java */
+.correct{
+    background: rgb(2, 59, 2);
+}
+.incorrect{
+    background: rgb(71, 15, 15);
 }
